@@ -23,7 +23,7 @@ jobs:
         run: mvn clean test -Dkarate.options=--tags=@smoke
 
       - name: Subir reporte
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: karate-report
           path: target/karate-reports
