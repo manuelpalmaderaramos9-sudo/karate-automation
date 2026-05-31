@@ -1,0 +1,29 @@
+name: Karate CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Configurar Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Ejecutar tests smoke
+        run: mvn clean test -Dkarate.options=--tags=@smoke
+
+      - name: Subir reporte
+        uses: actions/upload-artifact@v3
+        with:
+          name: karate-report
+          path: target/karate-reports

@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"42408da3-cec7-4d33-a370-4cf0200332cf",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>user.user</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-05-30 07:47:23 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Obtener lista de usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">user/user.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">API Usuarios - ServeRest</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Obtener lista de usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:47:21.922 classpath:user/user.feature:4
+* url baseUrl
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.Token</div>
+      </div>
+      <div class="time-cell passed">9088</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.3">
+      <div class="step-ref bg-step">3</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = java.lang.System.currentTimeMillis()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email = &#39;test.user.&#39; + timestamp + &#39;@mail.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4.0.call.0.8">{
+  &quot;nome&quot;: &quot;Test User&quot;,
+  &quot;email&quot;: &quot;#(email)&quot;,
+  &quot;password&quot;: &quot;123456&quot;,
+  &quot;administrador&quot;: &quot;true&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#  crear usuario (sin romper si existe)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request user</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8403</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.20">19:47:13.300 request:
+1 &gt; POST https://serverest.dev/usuarios
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 106
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nome&quot;:&quot;Test User&quot;,&quot;email&quot;:&quot;test.user.1780188432842@mail.com&quot;,&quot;password&quot;:&quot;123456&quot;,&quot;administrador&quot;:&quot;true&quot;}
+
+19:47:21.337 response time in milliseconds: 8035
+1 &lt; 201
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: e3042589a10ef22df765d903e479349f
+1 &lt; date: Sun, 31 May 2026 00:47:23 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 82
+{
+    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
+    &quot;_id&quot;: &quot;mkcO9sGkLZUnjZVy&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (responseStatus == 400) karate.log(&#39;Usuario ya existe&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#  login (esto SI debe ser 200)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.26">
+      <div class="step-ref bg-step">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: email, password: &#39;123456&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.27">
+      <div class="step-ref bg-step">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">578</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.27">19:47:21.343 request:
+2 &gt; POST https://serverest.dev/login
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 37
+2 &gt; Host: serverest.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;email&quot;,&quot;password&quot;:&quot;123456&quot;}
+
+19:47:21.918 response time in milliseconds: 573
+2 &lt; 400
+2 &lt; access-control-allow-origin: *
+2 &lt; x-dns-prefetch-control: off
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+2 &lt; x-download-options: noopen
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-xss-protection: 1; mode=block
+2 &lt; content-type: application/json; charset=utf-8
+2 &lt; x-cloud-trace-context: af5938fe5fcecdf2c76c5241d19d0a60
+2 &lt; date: Sun, 31 May 2026 00:47:24 GMT
+2 &lt; server: Google Frontend
+2 &lt; Content-Length: 50
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.28">
+      <div class="step-ref bg-step">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.28">19:47:21.918 classpath:helpers/Token.feature:28
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.29">
+      <div class="step-ref bg-step">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def token = response.authorization</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>header Authorization = token</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:47:21.923 classpath:user/user.feature:5
+* header Authorization = token
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:47:21.923 classpath:user/user.feature:8
+Given path &#39;/usuarios&#39;
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+classpath:user/user.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">19:47:21.923 classpath:user/user.feature:9
+When method GET
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+classpath:user/user.feature:8
+classpath:user/user.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">19:47:21.923 classpath:user/user.feature:10
+Then status 200
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+classpath:user/user.feature:8
+classpath:user/user.feature:9
+classpath:user/user.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.quantidade == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">19:47:21.923 classpath:user/user.feature:11
+And match response.quantidade == &#39;#number&#39;
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+classpath:user/user.feature:8
+classpath:user/user.feature:9
+classpath:user/user.feature:10
+classpath:user/user.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert response.quantidade &gt;= 0</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">19:47:21.924 classpath:user/user.feature:12
+And assert response.quantidade &gt;= 0
+&gt;&gt; classpath:user/user.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 
+03:   var config = {
+04:     baseUrl: &#39;https://serverest.dev&#39;
+05:   };
+06: 
+07:   // obtener token automáticamente
+08:   var auth = karate.call(&#39;classpath:helpers/Token.feature&#39;, { baseUrl: config.baseUrl });
+09: 
+10:   config.token = auth.token;
+11: 
+12:   return config;
+13: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 573, url: https://serverest.dev/login, response: 
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+classpath:helpers/Token.feature:28
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:2046)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1948)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:165)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:155)
+- &lt;js&gt;.fn(Unnamed:8)
+
+classpath:user/user.feature:4
+classpath:user/user.feature:5
+classpath:user/user.feature:8
+classpath:user/user.feature:9
+classpath:user/user.feature:10
+classpath:user/user.feature:11
+classpath:user/user.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

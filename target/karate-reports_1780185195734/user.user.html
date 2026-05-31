@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"42408da3-cec7-4d33-a370-4cf0200332cf",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>user.user</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-05-30 06:49:56 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Obtener lista de usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">user/user.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">API Usuarios - ServeRest</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Obtener lista de usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1119</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1057</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">18:49:54.478 request:
+1 &gt; GET https://serverest.dev/usuarios
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:49:55.263 response time in milliseconds: 784
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: dcb6e9da3bf15ebb8ec78bdf2a3c1ed0
+1 &lt; date: Sat, 30 May 2026 23:49:57 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 4647
+{
+    &quot;quantidade&quot;: 20,
+    &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_3bdf2c50-2a54-4731-a899-3b27352d6f5b@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0mIvXy3X5so7h1eW&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;fulano@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;0936ec8f596e@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;32uGIRjbNQXtQ2Dq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Actualizado&quot;,
+            &quot;email&quot;: &quot;qa_0036e181-affe-4aac-a2d8-ede26f8839fe@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;FOOJWeigW2NuWT1b&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Actualizado&quot;,
+            &quot;email&quot;: &quot;qa_9154e551-e129-4360-b7b6-b17781ba7ead@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;G8CFAnMDr9EijlG2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_72245bb2-cbac-49ac-afd0-213cf71f490e@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KjuqCbR47WoaABd8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lysa&quot;,
+            &quot;email&quot;: &quot;lysamakelle@gmail.com&quot;,
+            &quot;password&quot;: &quot;makelle124&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;NU0h6KZ46RJcwibK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_b9b3d3ad-cd9b-410d-b5ef-57a78b720b2b@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;StZiHD6icxQRndmS&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bijuzinho da Silva&quot;,
+            &quot;email&quot;: &quot;tfsas@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VGy4HEhOOF0CVfWP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_615b28b5-5d1d-44d6-85ec-d730aa101bf0@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VLaNXsrXgMhWq7t0&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;ba1d7f790c1a@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;XVZ7kVNJh6rfcxoM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_39619213-87ea-4522-80ed-5e088c3bfbd0@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Zq1LLEOLvjEaa3BW&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Actualizado&quot;,
+            &quot;email&quot;: &quot;qa_ed92c29a-9bac-4fb5-b997-26aae9b9ba63@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;aDyXD8YkmTXT8F0x&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_613eca14-29e7-4731-b1cd-36fd8dd4c54a@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ccLVJ4xKxo6sbsmI&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_97f0083e-1a03-4e81-b0b7-bc7b4eafb100@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;kyMaqPoByUJKIzIH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User Number.553230&quot;,
+            &quot;email&quot;: &quot;user.553230@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;lamrGP2k900v37JK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_92ba5a6b-a6fa-4394-b71a-9e833761d01c@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;nlnBBzaYuV5gC6o0&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Actualizado&quot;,
+            &quot;email&quot;: &quot;qa_134a006f-20d9-405e-b701-17ef16f97cb3@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uO84GtqhGI9Gqp92&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_80cb4fa4-ddbf-4469-b678-ada752b7f4d3@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uu9ZZ9X29McDi11H&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_08c4d502-184c-4f66-80e2-e02428b8e6c2@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vnYEdrAwpjXfSXFd&quot;
+        }
+    ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.quantidade == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.quantidade &gt;= 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
