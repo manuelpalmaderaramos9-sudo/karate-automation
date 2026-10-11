@@ -4,7 +4,7 @@ Feature: API Usuarios - ServeRest
     * url baseUrl
     * header Authorization = token
 
-  @regresion
+  @regresion @smoke
   Scenario: Obtener lista de usuarios
     Given path '/usuarios'
     When method GET

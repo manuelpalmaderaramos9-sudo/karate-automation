@@ -7,7 +7,7 @@ Feature: API Usuarios - ServeRest
     * def token = auth.token
     * header Authorization = token
 
-@regresion
+@regresion @negative
   Scenario: Obtener usuarios con parámetro inválido
     Given path '/usuarios'
     And param limit = -5
@@ -16,7 +16,7 @@ Feature: API Usuarios - ServeRest
     And print response
     And match response.limit == 'limit não é permitido'
 
-@regresion
+@regresion @negative
   Scenario: Validar error 404 usuario no existe
     Given path '/usuarios/1234567890abcdef'
     When method GET

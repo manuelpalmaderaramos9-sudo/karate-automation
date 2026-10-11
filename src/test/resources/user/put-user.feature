@@ -5,7 +5,7 @@ Feature: Actualizar usuario
     * def user = call read('classpath:helpers/user-data.js')
     * header Authorization = token
 
-  @regresion
+  @regresion @smoke
   Scenario: Actualizar usuario existente
     Given path '/usuarios'
     And request user

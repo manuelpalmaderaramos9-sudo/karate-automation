@@ -5,7 +5,7 @@ Feature: Crear usuario
     * def user = call read('classpath:helpers/user-data.js')
     * header Authorization = token
 
-  @regresion
+  @regresion @smoke
   Scenario: Crear usuario válido
     Given path '/usuarios'
     And request user

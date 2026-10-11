@@ -1,9 +1,12 @@
 Feature: Eliminar usuario
 
   Background:
+    * print baseUrl
+    * print token
     * url baseUrl
     * def user = call read('classpath:helpers/user-data.js')
     * header Authorization = token
+
 
   @regresion
   Scenario: Eliminar usuario existente

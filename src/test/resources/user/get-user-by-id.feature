@@ -5,7 +5,7 @@ Feature: Buscar usuario por ID
     * def user = call read('classpath:helpers/user-data.js')
     * header Authorization = token
 
-  @regresion
+  @regresion @smoke
   Scenario: Buscar usuario existente
     Given path '/usuarios'
     And request user
